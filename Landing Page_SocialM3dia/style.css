@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html {
+    --bg: #f5f6f7;
+    --color-text: #9c9c9c;
+    --color-orange: #ff6a00;
+    --color-inset-shadow: inset -2px -2px 6px rgba(255,255,255,0.8),
+                        inset 2px 2px 6px rgba(0,0,0,0.1);
+    --color-equal-shadow: 20px 20px 60px rgb(3, 169, 244, 0.01),
+                        -20px -20px 60px rgba(0,0,0,0.3);
+    --color-equal-inset-shadow: inset -2px -2px 6px rgba(255, 106, 0,0.5),
+                            inset 2px 2px 6px rgba(0,0,0,0.3);
+  }
+  
+  html[data-theme='dark'] {
+    --bg: #131419;
+    --color-text: #fff;
+    --color-orange: #ff6a00;
+    --color-shadow: -3px -3px 10px rgba(255,255,255,0.05),
+                    3px 3px 15px rgba(0,0,0,0.5);
+    --color-inset-shadow: inset -2px -2px 6px rgba(255,255,255,0.01),
+                        inset 2px 2px 6px rgba(0,0,0,0.8);
+    --color-equal-shadow: 20px 20px 60px #08080a, 
+                            -20px -20px 60px #1e2028;
+    --color-equal-inset-shadow: inset -2px -2px 6px rgba(255, 106, 0,0.2),
+                                inset 2px 2px 6px rgba(0,0,0,0.5);
+  }
+
+.card-header {
+    background: var(--bg)!important;
+    box-shadow: var(--color-equal-shadow);
+}
+
+span {
+    color: var(--color-orange);
+}
+
+i {
+    color: var(--color-orange);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    box-shadow: var(--color-equal-shadow);
+}
+
+div {
+    display: block;
+    background-color: var(--bg);
+}
+
+.card-text {
+    color: var(--color-text);
+    text-align: center; 
+}
+
+.card-title {
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--color-text);
+}
+
+.card-footer {
+    box-shadow: var(--color-inset-shadow);
+    text-align: center;
+}
+
+body {
+    margin: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: var(--bg);
+}
+
+.align-middle {
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.box {
+    margin: 1rem;
+    box-shadow: var(--color-equal-shadow)!important;
+    position: relative;
+    border-radius: 20px;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.title {
+    color: var(--color-text);
+}
+label input[type="checkbox"] {
+    -webkit-appearance: none;
+  }
+  
+  label input[type="checkbox"]:checked ~ .fas {
+    color: var(--color-orange);
+  }
+
+
+
+
+
